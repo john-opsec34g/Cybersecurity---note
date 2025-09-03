@@ -1,0 +1,163 @@
+🛡️ OverTheWire Bandit Notes (Levels 1–10)
+
+These are my detailed notes while solving the Bandit wargame on OverTheWire.
+The game is designed to teach Linux basics, file manipulation, and security concepts — essential skills for cybersecurity.
+
+
+
+
+🔑 Level Notes
+
+Level 1 → 2
+
+Task: Password is in a file called -.
+
+Command:
+
+ls
+cat ./-
+
+✅ Learned how to handle tricky filenames starting with - by prefixing with ./.
+
+
+
+
+Level 2 → 3
+
+Task: Password is in a file called spaces in this filename.
+
+Command:
+
+cat "spaces in this filename"
+
+✅ Learned how to use quotes for filenames with spaces
+
+
+Level 3 → 4
+
+Task: Password is hidden inside a hidden file in the inhere directory.
+
+Command:
+
+cd inhere
+ls -a
+cat .hidden
+
+✅ Learned how to reveal hidden files with ls -a.
+
+
+
+
+
+Level 4 → 5
+
+Task: The password is in one human-readable file among many.
+
+Command:
+
+cd inhere
+file ./*
+cat ./-file07
+
+✅ Learned how to identify readable files using file.
+
+
+
+
+
+Level 5 → 6
+
+Task: Find the file with specific properties:
+
+human-readable
+
+1033 bytes in size
+
+not executable
+
+
+Command:
+
+find . -type f -size 1033c ! -executable
+cat ./<filename>
+
+✅ Learned how to use find with filters (-size, ! -executable).
+
+
+
+
+Level 6 → 7
+
+Task: Password is stored in /etc/bandit_pass/bandit7.
+But you don’t know the exact filename.
+
+Command:
+
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+
+✅ Learned how to search entire filesystem and redirect errors with 2>/dev/null.
+
+
+
+
+
+Level 7 → 8
+
+Task: Password is in a file called data.txt next to the word “millionth”.
+
+Command:
+
+grep millionth data.txt
+
+✅ Learned how to use grep to search text in files.
+
+
+
+
+
+Level 8 → 9
+
+Task: Password is the only unique line in data.txt.
+
+Command:
+
+sort data.txt | uniq -u
+
+✅ Learned how to combine sort and uniq -u to find unique lines.
+
+
+
+
+
+Level 9 → 10
+
+Task: Password is in data.txt and is one of the few human-readable strings.
+
+Command:
+
+strings data.txt | grep ==
+
+✅ Learned how to extract readable text from a binary using strings.
+
+
+
+
+
+📘 Skills Learned (Levels 1–10)
+
+Handling special filenames (-, spaces).
+
+Working with hidden files (ls -a).
+
+Identifying file types (file).
+
+Searching with find.
+
+Redirecting errors (2>/dev/null).
+
+Text searching with grep.
+
+Finding unique values with uniq.
+
+Extracting text from binaries with strings.
