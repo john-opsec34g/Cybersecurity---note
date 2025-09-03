@@ -54,6 +54,6 @@ This repository is where I document my journey through **Cisco Cybersecurity Ess
 ## 📫 Connect With Me  
 
 - 💼 LinkedIn: [Your Profile Link]  
-- 📧 Email: [Your Professional Email]  
+- 📧 Email: jvictory627@gmail.com
 
 ⭐️ *If you’re also learning cybersecurity, feel free to fork, star, or connect with me — let’s grow together!*
