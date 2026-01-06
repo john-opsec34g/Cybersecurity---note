@@ -1,51 +1,41 @@
-# 👋 Hi, I'm john victory 
+I am a Junior SOC / Blue Team Analyst in training with a strong interest in how real security operations work beyond theory and certifications.
 
-🎯 **SOC Analyst | Cloud Security Enthusiast | AI in Cybersecurity Learner**
+My focus is on alert triage, incident investigation, and security decision-making, not just learning tools for their own sake. Through my learning journey, I’ve come to understand that effective SOC work is about context, reasoning, and prioritization under uncertainty.
 
-I’m passionate about cybersecurity, cloud technologies, and how AI can enhance modern security operations.  
-Currently, I’m developing hands-on projects and labs to strengthen my defensive, analytical, and automation skills.
+I have completed the Microsoft SC-200 (Security Operations Analyst) learning path, AZ-900 (Azure Fundamentals), and the CISO Junior Analyst program, where I gained foundational knowledge in:
 
----
+SOC workflows and escalation processes
 
-## 🔐 About Me
-- ✅ Completed **CompTIA Network+**  
-- ✅ Completed **CompTIA Security+**  
-- ✅ Completed **CISO Junior Analyst Course**  
-- 🎓 Currently learning **Microsoft SC-200 (Security Operations Analyst)** and **Azure Fundamentals (AZ-900)**  
-- 🌩️ Expanding knowledge in **Cloud Security & Azure Sentinel**  
-- 🤖 Exploring **AI and Automation in Cybersecurity Operations**  
-- 🧠 Focused on **Threat Hunting, SIEM, and SOC Operations**
+Endpoint detection and response concepts
 
----
+Threat and alert analysis
 
-## 🧰 Tools & Technologies
-- **SOC Tools:** Wazuh, Splunk, ELK Stack, Security Onion, Graylog  
-- **Networking:** Wireshark, Nmap, Firewalls, TCP/IP  
-- **Cloud Platforms:** Microsoft Azure, AWS (Basics)  
-- **Programming:** Python, PowerShell, Bash  
-- **AI/Automation:** Python (scikit-learn, Pandas), Microsoft Sentinel Playbooks, Logic Apps  
+Security monitoring and incident documentation
 
----
+Network and endpoint defense fundamentals
 
-## 🧪 Current Projects
-- 🛡️ Building a **Home SOC Lab** using Wazuh + Windows VM + Attack Simulation  
-- ☁️ Configuring **Azure Sentinel & Security Center** for cloud log correlation  
-- 🤖 Experimenting with **AI-driven Threat Detection Models** using Python  
-- 📘 Writing project documentation with detailed setups and screenshots  
+I am currently strengthening these skills through hands-on blue team labs, including CyberDefenders SOC labs and Blue Team Labs, where I practice:
 
----
+Investigating suspicious activity
 
-## 📂 Featured Repositories
-- [`SOC-Lab`](#): Personal SOC lab configuration, log analysis, and attack simulations  
-- [`Azure-Sentinel-Playbooks`](#): Automated playbooks and incident response rules  
-- [`AI-Threat-Detection`](#): Machine learning experiments for anomaly detection  
+Differentiating false positives from true incidents
 
----
+Analyzing logs, processes, and user behavior
 
-## 📫 Connect with Me
-- 💼 LinkedIn: [Your LinkedIn URL]  
-- ✉️ Email: jvictory627@gmail.com 
+Writing clear investigation notes and conclusions
 
----
+I actively document my learning, lab work, and thought process in this GitHub repository to demonstrate how I think as a SOC analyst, not just what tools I’ve seen. My goal is to build practical, job-ready skills and prepare for remote SOC Level 1 roles or cybersecurity internships.
 
-⭐ *“Always learning, always defending — building a safer digital world one project at a time.”*
+I am committed to continuous learning, disciplined practice, and developing the mindset required to work in a real Security Operations Centen
+
+🔍 Current Focus Areas
+
+SOC Level 1 alert triage and escalation
+
+Endpoint and user behavior analysis
+
+Log analysis and investigation workflow
+
+Incident documentation and reporting
+
+Blue team fundamentals and defensive security
