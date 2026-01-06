@@ -1,0 +1,28 @@
+# SOC Analyst Labs & Investigations
+
+This repository documents my hands-on learning journey as a **Junior SOC / Blue Team Analyst in training**.
+
+The focus of this repository is not tool memorization, but:
+- Alert triage and investigation
+- Network and endpoint forensics
+- Security decision-making
+- Clear documentation and reasoning
+
+## What you'll find here
+- Realistic SOC-style investigations
+- PCAP and log analysis walkthroughs
+- Indicators of Compromise (IOCs)
+- Defensive recommendations and lessons learned
+
+## Skills Practiced
+- Network traffic analysis (Wireshark)
+- Web attack investigation
+- Reverse shell detection
+- Data exfiltration analysis
+- Incident documentation
+
+## Labs Platforms
+- CyberDefenders
+- Blue Team Labs
+
+This repository is intended to demonstrate **how I think and investigate as a SOC analyst**, not just what tools I’ve seen.
