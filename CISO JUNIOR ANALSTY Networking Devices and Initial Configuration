@@ -1,0 +1,247 @@
+Networking Devices and Initial Configuration
+
+Course Notes | Junior SOC / Blue Team Foundations
+
+Overview
+
+This repository documents my structured notes and hands-on understanding from the Networking Devices and Initial Configuration course, part of the Junior Cybersecurity Analyst career path.
+
+The purpose of these notes is not to restate course material, but to connect core networking concepts to real-world security operations, incident investigation, and troubleshooting scenarios commonly encountered by SOC analysts.
+
+Networking is the foundation of cybersecurity. Every alert, log, packet capture, or intrusion investigation relies on a solid understanding of how data moves across networks, how devices communicate, and where failures or abuse can occur.
+
+Learning Objectives
+
+Through this course and supporting labs, I focused on building the ability to:
+
+Understand how modern networks are designed and structured
+
+Configure and validate basic network devices
+
+Analyze IP addressing and traffic flow
+
+Identify normal vs abnormal network behavior
+
+Relate networking concepts to security risks and attack techniques
+
+Module 1: Network Design Fundamentals
+
+This module introduced the principles behind reliable and secure network design.
+
+Key Concepts
+
+Fault Tolerance: Designing networks to continue functioning when components fail
+
+Scalability: Ensuring networks can grow without performance degradation
+
+Quality of Service (QoS): Prioritizing critical traffic
+
+Network Security: Protecting data, devices, and communication paths
+
+Hierarchical Network Design
+
+Networks are typically divided into:
+
+Access Layer – End devices connect here
+
+Distribution Layer – Policy enforcement and routing
+
+Core Layer – High-speed backbone
+
+SOC relevance:
+Understanding these layers helps analysts identify where an attack originates, where logs should exist, and which devices should be monitored during an incident.
+
+Module 2: Cloud and Virtualization
+
+This module explored how modern networks leverage cloud computing and virtualization.
+
+Key Topics
+
+Public, private, and hybrid cloud models
+
+Virtual machines and hypervisors
+
+Benefits of virtualization (isolation, scalability, cost efficiency)
+
+SOC relevance:
+Virtualized environments introduce shared infrastructure risks and require visibility across virtual networks, not just physical devices.
+
+Module 3: Number Systems (Binary & Hexadecimal)
+
+A strong focus was placed on understanding how computers interpret data.
+
+Skills Developed
+
+Binary-to-decimal and decimal-to-binary conversion
+
+Understanding IPv4 addressing in binary
+
+Hexadecimal representation used in MAC and IPv6 addresses
+
+SOC relevance:
+Packet analysis, subnetting, MAC address identification, and protocol decoding all rely on binary and hexadecimal understanding.
+
+Module 4: Ethernet Switching
+
+This module covered how data moves at Layer 2 of the OSI model.
+
+Core Topics
+
+Ethernet frame structure
+
+MAC addressing (unicast, broadcast, multicast)
+
+Switch learning and forwarding behavior
+
+MAC address tables
+
+SOC relevance:
+Layer 2 attacks (ARP spoofing, MAC flooding) exploit how switches operate. Understanding switching behavior is essential for detecting lateral movement.
+
+Module 5: The Network Layer
+
+Focused on Layer 3 communication and IP behavior.
+
+Key Concepts
+
+IP encapsulation
+
+Connectionless and best-effort delivery
+
+IPv4 vs IPv6 packet structures
+
+SOC relevance:
+IP headers are critical during traffic analysis, routing investigations, and identifying spoofed or malformed packets.
+
+Module 6: IPv4 Address Structure
+
+Deep dive into how IPv4 addresses are constructed and used.
+
+Topics Covered
+
+Network vs host portions
+
+Subnet masks and prefix length
+
+Logical AND operations to determine networks
+
+SOC relevance:
+Understanding subnets helps analysts detect unauthorized devices, identify scanning behavior, and analyze segmentation failures.
+
+Module 7: Address Resolution (ARP)
+
+Explored how IP addresses are resolved to MAC addresses.
+
+Key Topics
+
+ARP request and reply process
+
+ARP tables and caching
+
+ARP-related security risks (ARP spoofing)
+
+SOC relevance:
+ARP poisoning is a common internal network attack used for credential theft and man-in-the-middle attacks.
+
+Module 8: IP Addressing Services
+
+Focused on DNS and DHCP, two critical infrastructure services.
+
+DNS
+
+Name resolution process
+
+DNS hierarchy and queries
+
+Using nslookup for troubleshooting
+
+DHCP
+
+Dynamic IP assignment
+
+DHCP message flow (DORA)
+
+SOC relevance:
+DNS abuse and rogue DHCP servers are frequent attack vectors. DNS logs are a key data source in SOC investigations.
+
+Module 9: Transport Layer (TCP & UDP)
+
+Covered how applications communicate over networks.
+
+TCP
+
+Three-way handshake
+
+Reliability, sequencing, flow control
+
+Connection establishment and termination
+
+UDP
+
+Lightweight, connectionless communication
+
+Common use cases (DNS, streaming, VoIP)
+
+SOC relevance:
+Port analysis, connection behavior, and protocol misuse detection rely on transport-layer understanding.
+
+Module 10: Cisco IOS Command Line
+
+Introduced the Cisco IOS CLI for device interaction.
+
+Skills Practiced
+
+Navigating IOS modes
+
+Using show commands
+
+Viewing interface and configuration data
+
+SOC relevance:
+Analysts often rely on network engineers’ output or device logs. Understanding IOS outputs improves collaboration and incident response accuracy.
+
+Module 11: Building and Securing a Small Network
+
+Hands-on configuration of switches and routers.
+
+Activities Included
+
+Basic device configuration
+
+Enabling SSH for secure management
+
+Configuring default gateways
+
+Connectivity testing and troubleshooting
+
+SOC relevance:
+Misconfigurations are a major security risk. Knowing how devices should be configured helps identify weaknesses.
+
+Module 12: ICMP and Network Testing
+
+Focused on diagnostic tools and message types.
+
+Key Tools
+
+ping
+
+traceroute
+
+ICMP Messages
+
+Destination unreachable
+
+Time exceeded
+
+SOC relevance:
+ICMP traffic can indicate scanning, misconfigurations, or reconnaissance activity.
+
+Key Takeaways for SOC Analysts
+
+Networking fundamentals directly impact incident detection and response
+
+Understanding traffic flow improves PCAP analysis
+
+Many attacks exploit basic misconfigurations
+
+Strong fundamentals reduce false positives during alert triage
