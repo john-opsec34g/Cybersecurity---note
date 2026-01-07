@@ -1,0 +1,495 @@
+ CISO JUNIOR ANALYST Networking Basics — Deep-Dive Notes for Junior SOC Analysts
+
+These notes document my in-depth learning from the Networking Basics course in the Junior Cybersecurity Analyst Career Path.
+
+The goal of this documentation is to demonstrate conceptual understanding, security awareness, and investigative thinking, not just course completion.
+
+
+1. Why Networking Matters in Cybersecurity
+
+Every digital attack involves a network.
+As a SOC analyst, I must understand:
+
+How devices communicate
+
+How data flows across networks
+
+How attackers abuse protocols
+
+How abnormal traffic differs from normal behavior
+
+Without networking fundamentals, log analysis, SIEM alerts, PCAP investigations, and incident response are impossible to do well.
+
+
+2. Module 1: Communication in a Connected World
+
+2.1 Network Types
+
+Local Area Network (LAN)
+
+Small geographic area
+
+High speed, low latency
+
+Common in homes, offices, and campuses
+
+Wide Area Network (WAN)
+
+Connects multiple LANs
+
+Slower than LANs
+
+The internet is the largest WAN
+
+Other Network Types
+
+PAN: Personal devices (Bluetooth, wearables)
+
+MAN: City-wide networks
+
+Security relevance:
+
+Helps determine if traffic is internal vs external
+
+Critical for identifying data exfiltration paths
+
+
+2.2 Data Transmission
+
+Data is split into packets
+
+Packets travel independently
+
+Reassembled at the destination
+
+Transmission methods:
+
+Unicast: One sender → one receiver
+
+Broadcast: One sender → all devices
+
+Multicast: One sender → selected group
+
+SOC relevance:
+
+Excessive broadcast traffic may indicate misconfigurations or ARP attacks
+
+Unexpected multicast traffic can signal malware activity
+
+
+2.3 Bandwidth vs Throughput
+
+Bandwidth: Maximum possible data rate
+
+Throughput: Actual successful data transfer
+
+Low throughput despite high bandwidth may indicate:
+
+Network congestion
+
+Packet loss
+
+Malicious traffic interference
+
+
+3. Module 2: Network Components, Types, and Connections
+
+3.1 Clients and Servers
+
+Client
+
+Initiates requests
+
+Examples: browser, email app
+
+Server
+
+Responds to requests
+
+Examples: web server, DNS server, mail server
+
+SOC relevance:
+
+Servers should behave predictably
+
+A client acting like a server may indicate compromise
+
+
+3.2 Network Components
+Device	Function	Security Relevance
+Switch	Forwards frames within LAN	Lateral movement analysis
+Router	Routes traffic between networks	External traffic analysis
+Firewall	Filters traffic	First line of defense
+Access Point	Wireless connectivity	Rogue AP detection
+NIC	Network interface	MAC-level tracking
+3.3 ISP Connectivity Options
+
+Fiber
+
+DSL
+
+Cable
+
+Wireless
+
+Understanding ISP connections helps during:
+
+Incident escalation
+
+External attack attribution
+
+Traffic source validation
+
+4. Module 3: Wireless and Mobile Networks
+
+4.1 Wireless Networks
+
+Use radio signals
+
+Governed by IEEE 802.11 standards
+
+Vulnerable to interception if misconfigured
+
+
+4.2 Mobile Connectivity
+
+Cellular data
+
+Public Wi-Fi
+
+Security risks:
+
+Man-in-the-Middle (MITM)
+
+Rogue access points
+
+Weak encryption
+
+5. Module 4: Building a Home Network
+
+5.1 Home Network Basics
+
+Router acts as:
+
+Gateway
+
+DHCP server
+
+NAT device
+
+End devices connect via Ethernet or Wi-Fi
+
+5.2 Wireless Standards
+
+Affect speed
+
+Affect range
+
+Affect security capabilities
+
+5.3 Router Configuration
+
+IP address assignment
+
+Wireless security
+
+Admin access control
+
+SOC relevance:
+Many real-world breaches begin with poor network configuration.
+
+6. Module 5: Communication Principles
+
+6.1 Communication Protocols
+
+Protocols define:
+
+How data is formatted
+
+How it is transmitted
+
+How errors are handled
+
+6.2 Communication Standards
+
+Ensure interoperability
+
+Prevent vendor lock-in
+
+
+6.3 Network Communication Models
+
+OSI Model (7 Layers)
+
+Physical
+
+Data Link
+
+Network
+
+Transport
+
+Session
+
+Presentation
+
+Application
+
+TCP/IP Model
+
+Application
+
+Transport
+
+Internet
+
+Network Access
+
+SOC mindset:
+Attacks can be mapped to specific layers.
+
+7. Module 6: Network Media
+
+7.1 Media Types
+
+Copper (Ethernet)
+
+Fiber optics
+
+Wireless
+
+Each affects:
+
+Speed
+
+Reliability
+
+Eavesdropping risk
+
+8. Module 7: The Access Layer
+
+8.1 Encapsulation and Ethernet Frames
+
+Data wrapped with headers
+
+Includes source and destination MAC addresses
+
+8.2 Access Layer Function
+
+Device-to-device communication
+
+Switching logic
+
+Security relevance:
+
+MAC spoofing
+
+ARP poisoning
+
+Unauthorized device access
+
+9. Module 8: Internet Protocol (IPv4)
+
+9.1 Purpose of IPv4
+
+Logical device identification
+
+Enables routing across networks
+
+
+9.2 IPv4 Structure
+
+32-bit address
+
+Divided into:
+
+Network portion
+
+Host portion
+
+SOC analysts rely heavily on IP addresses in:
+
+SIEM alerts
+
+Firewall logs
+
+Threat intelligence
+
+10. Module 9: IPv4 and Network Segmentation
+10.1 IPv4 Address Types
+
+Public vs Private
+
+Static vs Dynamic
+
+
+10.2 Network Segmentation
+
+Benefits:
+
+Limits attacker movement
+
+Improves performance
+
+Enhances monitoring
+
+Segmentation failures often lead to large-scale breaches.
+
+11. Module 10: IPv6 Addressing
+
+11.1 IPv4 Limitations
+
+Address exhaustion
+
+Increased NAT complexity
+
+11.2 IPv6 Advantages
+
+Larger address space
+
+Simplified routing
+
+SOC relevance:
+IPv6 traffic must be monitored to avoid visibility gaps.
+
+12. Module 11: Dynamic Addressing with DHCP
+
+12.1 Addressing Types
+
+Static: Fixed
+
+Dynamic: Assigned automatically
+
+12.2 DHCP Process (DORA)
+
+Discover
+
+Offer
+
+Request
+
+Acknowledge
+
+Security risks:
+
+Rogue DHCP servers
+
+Address exhaustion attacks
+
+13. Module 12: Gateways and NAT
+13.1 Network Boundaries
+
+Separate internal from external networks
+
+13.2 NAT
+
+Translates private IPs to public IPs
+
+Adds a layer of obscurity
+
+SOC challenge:
+NAT complicates incident attribution.
+
+14. Module 13: Address Resolution Protocol (ARP)
+
+14.1 MAC and IP Mapping
+
+ARP resolves IP → MAC
+
+Uses broadcast messages
+
+14.2 Security Implications
+
+ARP spoofing
+
+Man-in-the-Middle attacks
+
+ARP traffic analysis is critical during internal investigations.
+
+15. Module 14: Routing Between Networks
+
+15.1 Routing Purpose
+
+Enables inter-network communication
+
+15.2 Routing Table
+
+Determines packet path
+
+Based on destination IP
+
+Routing knowledge helps track attack paths and pivoting.
+
+16. Module 15: TCP and UDP
+TCP
+
+Reliable
+
+Ordered
+
+Connection-oriented
+
+UDP
+
+Fast
+
+Unreliable
+
+Connectionless
+
+SOC insight:
+Attackers choose protocols based on speed, stealth, or reliability needs.
+
+17. Module 16: Application Layer Services
+Key Services
+
+DNS
+
+HTTP / HTTPS
+
+FTP
+
+Email protocols
+
+Virtual terminals
+
+Most real-world attacks occur at the application layer.
+
+18. Module 17: Network Testing Utilities
+Common Tools
+
+ping
+
+traceroute
+
+ipconfig / ifconfig
+
+netstat
+
+Used for:
+
+Initial triage
+
+Connectivity testing
+
+Suspicious activity validation
+
+19. SOC Analyst Key Takeaways
+
+Networking is the backbone of cybersecurity
+
+Protocol knowledge improves alert accuracy
+
+Traffic context reduces false positives
+
+Strong fundamentals lead to better investigations
+
+20. Next Learning Goals
+
+PCAP analysis with Wireshark
+
+Log correlation
+
+SIEM-based investigations
+
+Threat detection and response
