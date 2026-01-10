@@ -1,0 +1,86 @@
+🛡️ Endpoint Security & Network Defense Portfolio
+
+This repository documents my hands-on experience and practical understanding of endpoint security, network defense, and cyber threat mitigation as part of my journey toward becoming a Junior SOC Analyst / Cybersecurity Professional.
+
+The content focuses on real-world applications, not just theory. It demonstrates how I think, analyze, and respond to threats in a structured, professional manner.
+
+⏱️ Training Overview
+
+Course Duration: 27+ Hours
+
+Skill Level: Beginner → Junior Analyst
+
+Labs Completed: 31 Hands-on Labs
+
+Learning Mode: Self-paced
+
+This training provides foundational knowledge in securing networks, endpoints, and devices while maintaining the integrity, confidentiality, and availability of systems and data.
+
+🧠 Key Skills Developed
+Endpoint & System Security
+
+Hardening Windows and Linux hosts
+
+Configuring host-based firewalls and intrusion detection/prevention systems (HIDS/HIPS)
+
+Applying patch management and endpoint protection
+
+Detecting and mitigating malware threats
+
+Managing device encryption, boot integrity, and system hardening
+
+Network Security
+
+Analyzing TCP/IP, UDP, and ICMP vulnerabilities
+
+Securing DNS, DHCP, and ARP services
+
+Mitigating network attacks: DoS, MITM, spoofing, and amplification attacks
+
+Deploying firewalls, IDS/IPS, and VPNs
+
+Monitoring network traffic using Wireshark and NetFlow
+
+Wireless & Mobile Security
+
+Protecting WLANs and mobile devices
+
+Detecting rogue access points and radio-frequency jamming
+
+Implementing WPA2/WPA3 and secure SSID practices
+
+Threats & Attacks
+
+Social engineering (phishing, vishing, impersonation)
+
+Malware: Ransomware, logic bombs, rootkits
+
+Web and application attacks: XSS, SQL injection, RCE
+
+Email and browser-based attacks
+
+Threat intelligence research and attack surface analysis
+
+Cybersecurity Principles
+
+CIA Triad (Confidentiality, Integrity, Availability)
+
+Defense-in-depth and least privilege
+
+Incident detection, triage, and documentation
+
+Secure configuration and monitoring
+
+🛠️ Lab Exercises & Practical Work
+
+Hands-on labs completed:
+
+Network Traffic Analysis: Detecting DNS and ARP attacks, packet inspection
+
+System Hardening: Windows & Linux host configurations
+
+Malware Investigation: Online sandbox analysis, identifying IOCs
+
+Endpoint Protection: Applying encryption, patches, and firewall rules
+
+Threat Mitigation: Recommending and testing defensive measures
