@@ -1,0 +1,241 @@
+Endpoint Security 
+
+Course: Endpoint Security
+Duration: 27 Hours
+Labs Completed: 31
+Level: Beginner → SOC Foundations
+Focus: Endpoint Defense, OS Security, Network Attacks, Threat Mitigation
+
+📌 Overview
+
+This course provided hands-on foundational training in endpoint security, operating systems, network defense, and threat mitigation. The curriculum focused on defending systems at the network edge, where attacks most frequently occur, and emphasized real-world attack techniques, vulnerabilities, and defensive controls used by Security Operations Centers (SOC).
+
+Through theory, labs, and simulations, I developed practical skills in endpoint hardening, threat detection, system monitoring, and incident prevention across Windows, Linux, wired, and wireless environments.
+
+🎯 Core Skills Gained
+
+Endpoint threat detection and mitigation
+
+Windows and Linux system security
+
+Network and wireless attack analysis
+
+Host-based intrusion prevention
+
+Malware identification and containment
+
+Secure configuration and hardening
+
+Log analysis and system monitoring
+
+SOC-relevant investigation methodology
+
+🔍 Module Breakdown & Key Learnings
+1️⃣ Cybersecurity Threats, Vulnerabilities & Attacks
+What I Learned
+
+Internal vs external threats
+
+User-based and device-based vulnerabilities
+
+Malware types: ransomware, logic bombs, keyloggers, rootkits
+
+Application-layer attacks (XSS, SQL injection, RCE)
+
+Email-based threats: phishing, vishing, whaling
+
+Wireless attacks: rogue APs, bluejacking, SMiShing
+
+SOC Relevance
+
+Understanding attacker techniques enables faster alert triage, incident classification, and root cause analysis.
+
+2️⃣ Securing Networks
+What I Learned
+
+Threat, vulnerability, and risk relationships
+
+Threat actors and attacker motivation
+
+Network attack vectors
+
+Cyber threat indicators and intelligence sharing
+
+SOC Relevance
+
+This module builds the mindset required for threat modeling and security prioritization in real environments.
+
+3️⃣ Network Protocol & Transport Layer Attacks
+What I Learned
+
+IPv4 / IPv6 packet structures
+
+TCP and UDP vulnerabilities
+
+ICMP abuse, spoofing, amplification attacks
+
+Wireshark packet analysis
+
+SOC Relevance
+
+Critical for network traffic analysis, DoS detection, and protocol abuse investigation.
+
+4️⃣ Attacking Enterprise Services
+What I Learned
+
+DNS, DHCP, and ARP attacks
+
+DNS tunneling techniques
+
+Web application attacks
+
+Log analysis and database exploitation
+
+Virtual machine deployment for testing
+
+Labs Completed
+
+DNS traffic analysis
+
+Attacking MySQL databases
+
+Reading and analyzing server logs
+
+SOC Relevance
+
+These skills directly support incident response, log correlation, and threat hunting.
+
+5️⃣ Wireless Network Security
+What I Learned
+
+802.11 protocols and frame structures
+
+Rogue access points
+
+Wireless MITM attacks
+
+WPA2/WPA3 security
+
+Secure WLAN configuration
+
+SOC Relevance
+
+Essential for detecting unauthorized access, wireless intrusions, and network misconfigurations.
+
+6️⃣ Network Security Infrastructure
+What I Learned
+
+Firewalls (types and architectures)
+
+IDS vs IPS
+
+ACLs, Syslog, NetFlow, SNMP
+
+VPNs and AAA servers
+
+SOC Relevance
+
+Understanding infrastructure enables better alert interpretation and security architecture awareness.
+
+7️⃣ Windows Operating System Security
+What I Learned
+
+Windows architecture and vulnerabilities
+
+Event Viewer and system logs
+
+PowerShell and CLI usage
+
+Windows Defender & Firewall
+
+User and privilege management
+
+Labs Completed
+
+Windows user creation
+
+PowerShell usage
+
+Resource monitoring
+
+SOC Relevance
+
+Core skills for endpoint investigation, log analysis, and incident response in enterprise environments.
+
+8️⃣ Linux Fundamentals for SOC Analysts
+What I Learned
+
+Linux file system and permissions
+
+CLI navigation and text analysis
+
+Service monitoring and logs
+
+Malware and rootkit detection
+
+Server hardening techniques
+
+SOC Relevance
+
+Linux knowledge is critical for server investigations, cloud environments, and log analysis.
+
+9️⃣ System & Endpoint Protection
+What I Learned
+
+Patch management
+
+Host encryption and boot integrity
+
+Endpoint antimalware solutions
+
+Host-based IDS/IPS
+
+Application sandboxing
+
+Labs Completed
+
+Linux system hardening
+
+Password recovery
+
+Endpoint security recommendations
+
+SOC Relevance
+
+Directly aligned with endpoint detection and response (EDR) workflows.
+
+🔐 Cybersecurity Principles Applied
+
+Confidentiality, Integrity, Availability (CIA Triad)
+
+Data protection (at rest, in transit, in use)
+
+Security policies, standards, and procedures
+
+Defense-in-depth strategies
+
+🧠 Key Takeaways
+
+Most breaches start at the endpoint
+
+Misconfigurations are as dangerous as malware
+
+Monitoring + hardening = reduced attack surface
+
+SOC analysts must understand both attacks and defenses
+
+Logs and endpoints tell the full incident story
+
+📈 How This Prepares Me for a SOC Role
+
+This training strengthened my ability to:
+
+Investigate endpoint alerts
+
+Analyze logs and suspicious behavior
+
+Identify attack patterns
+
+Recommend mitigation strategies
+
+Support incident response workflows
