@@ -1,0 +1,195 @@
+🛡️ Network Defense & Security Operations Foundations
+
+Category: Network Security · SOC Fundamentals
+Level: Beginner → SOC-Ready Foundations
+Duration: 27+ Hours
+Labs Completed: 29 Hands-On Labs
+Learning Style: Self-paced, Lab-Driven
+
+📌 Overview
+
+This repository documents my structured training in network defense and security operations fundamentals.
+The course focuses on how enterprise networks are defended, monitored, and investigated, emphasizing defense-in-depth, alert evaluation, access control, firewall technologies, cryptography, and security monitoring.
+
+Rather than theory alone, the training is lab-heavy, simulating real-world defensive tasks commonly performed by SOC Analysts, Network Security Engineers, and Blue Team operators.
+
+🎯 Core Outcomes (What I Can Now Do)
+
+After completing this training, I can:
+
+Explain and apply Defense-in-Depth security strategies
+
+Identify assets, threats, vulnerabilities, and attack surfaces
+
+Analyze host, network, and security device logs
+
+Configure and evaluate ACLs, firewalls, and zone-based policies
+
+Understand SIEM data sources and alert generation
+
+Classify and triage security alerts
+
+Apply Zero Trust and access control principles
+
+Understand cryptography from a defensive monitoring perspective
+
+Analyze network traffic and common protocols for security relevance
+
+🧠 Technical Coverage (Condensed & Recruiter-Friendly)
+🔐 Defense & Security Operations
+
+Defense-in-Depth models (Security Onion, layered defense)
+
+Asset classification & lifecycle management
+
+Threat identification & vulnerability analysis
+
+Security policies, compliance, and standards
+
+Configuration and log management
+
+🖥️ System & Network Defense
+
+Physical security controls
+
+Application security & OWASP risks
+
+Secure network services & protocols
+
+Network hardening & segmentation
+
+Wireless & mobile security fundamentals
+
+Cyber resilience principles
+
+🔑 Identity & Access Control
+
+Physical, logical, and administrative access controls
+
+Authentication, authorization, and accountability (AAA)
+
+Privileged account management
+
+Multi-Factor Authentication (MFA)
+
+Zero Trust security model
+
+Linux authentication & authorization labs
+
+📜 Access Control Lists (ACLs)
+
+Standard & extended IPv4 ACLs
+
+Wildcard masking techniques
+
+ACL placement best practices
+
+IPv6 ACL implementation
+
+Attack mitigation using ACLs
+
+Packet Tracer simulations
+
+🔥 Firewall Technologies
+
+Packet-filtering vs stateful firewalls
+
+Network security architectures
+
+Zone-Based Policy Firewalls (ZPF)
+
+Firewall rule creation and validation
+
+Traffic inspection and policy enforcement
+
+☁️ Cloud Security Fundamentals
+
+Virtualization & cloud computing models
+
+Cloud security responsibility models
+
+Infrastructure, application, and data security
+
+Protecting virtual machines
+
+Cloud threat awareness
+
+🔐 Cryptography (Defensive Focus)
+
+Symmetric vs asymmetric encryption
+
+Hashing algorithms (MD5, SHA)
+
+Digital signatures and PKI
+
+Certificate authorities and trust models
+
+Encryption impact on network monitoring
+
+OpenSSL hands-on labs
+
+🌐 Network Protocols & Technologies
+
+Monitoring DNS, HTTP/S, ICMP, Email, NTP
+
+NAT, PAT, tunneling, encapsulation
+
+Peer-to-peer and Tor traffic implications
+
+Load balancing security considerations
+
+📊 Security Data & Monitoring
+
+Alert data vs log data
+
+Host and server logs
+
+Network logs (NetFlow, packet captures)
+
+SIEM log collection fundamentals
+
+Next-Generation Firewall logs
+
+🚨 Alert Evaluation & Detection
+
+IDS concepts (Snort, Security Onion)
+
+Rule-based alert generation
+
+Deterministic vs probabilistic analysis
+
+Alert classification & prioritization
+
+Hands-on alert evaluation labs
+
+🧪 Practical Experience
+
+✔ 29 guided labs covering:
+
+Firewall and ACL configuration
+
+Linux authentication and authorization
+
+Cryptographic operations and hashing
+
+IDS rule analysis and alert triage
+
+Network traffic and log analysis
+
+Packet Tracer simulations
+
+🧠 Tools & Technologies Exposure
+
+Packet Tracer
+
+Snort
+
+Security Onion (conceptual & alert analysis)
+
+Linux authentication tools
+
+OpenSSL
+
+NetFlow concepts
+
+Firewall and ACL configurations
